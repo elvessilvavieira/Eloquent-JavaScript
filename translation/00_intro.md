@@ -67,3 +67,45 @@ Alguns programadores acreditam que essa complexidade é melhor gerenciada usando
 {{index experimento}}
 
 Isso não é apenas chato, é ineficaz. Novos problemas muitas vezes requerem novas soluções. O campo da programação é jovem e ainda está se desenvolvendo rapidamente, e é variado o suficiente para ter espaço para abordagens radicalmente diferentes. Há muitos erros terríveis a serem feitos no design de programas, e você deve ir em frente e cometê-los pelo menos uma vez para que você os entenda. Um senso do que um bom programa parece é desenvolvido com a prática, não aprendido a partir de uma lista de regras.
+
+## Por que a linguagem importa
+
+{{index "linguagem de programação", "código de máquina", "dados binários"}}
+
+No início, no nascimento da computação, não existiam linguagens de programação. Os programas pareciam algo assim:
+
+```{lang: null}
+00110001 00000000 00000000
+00110001 00000001 00000001
+00110011 00000001 00000010
+01010001 00001011 00000010
+00100010 00000010 00001000
+01000011 00000001 00000000
+01000001 00000001 00000001
+00010000 00000010 00000000
+01100010 00000000 00000000
+```
+
+{{index [programação, "história da"], "cartão perfurado", complexidade}}
+
+Esse é um programa para somar os números de 1 a 10 e imprimir o resultado: `1 + 2 + ... + 10 = 55`. Ele poderia rodar em uma máquina simples e hipotética. Para programar os primeiros computadores, era necessário configurar grandes arranjos de interruptores na posição correta ou perfurar buracos em tiras de papelão e alimentá-los ao computador. Você provavelmente pode imaginar quão tedioso e propenso a erros esse procedimento era. Até mesmo escrever programas simples exigia muita inteligência e disciplina. Os complexos eram quase inconcebíveis.
+
+{{index bit, "mago (poderoso)"}}
+
+Claro, inserir manualmente esses padrões arcanos de bits (os uns e zeros) dava ao programador uma profunda sensação de ser um poderoso mago. E isso tem que valer alguma coisa em termos de satisfação no trabalho.
+
+{{index memória, instrução}}
+
+Cada linha do programa anterior contém uma única instrução. Ela poderia ser escrita em inglês assim:
+
+ 1. Armazene o número 0 na localização de memória 0.
+ 2. Armazene o número 1 na localização de memória 1.
+ 3. Armazene o valor da localização de memória 1 na localização de memória 2.
+ 4. Subtraia o número 11 do valor na localização de memória 2.
+ 5. Se o valor na localização de memória 2 for o número 0, continue com a instrução 9.
+ 6. Adicione o valor da localização de memória 1 à localização de memória 0.
+ 7. Adicione o número 1 ao valor da localização de memória 1.
+ 8. Continue com a instrução 3.
+ 9. Mostre o valor da localização de memória 0.
+
+{{index legibilidade, nomeação, vinculação}}
